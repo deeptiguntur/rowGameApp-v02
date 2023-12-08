@@ -1,5 +1,7 @@
 package model;
 
+import logger.Logger;
+
 /**
  * The TicTacToeBlock class represents a given block in the game.
  */
@@ -52,6 +54,7 @@ public class RowBlockModel
 	    throw new IllegalArgumentException("The value must be non-null.");
 	}
 	this.contents = value;
+    Logger.log("manipulates");
     }
 
     /**
@@ -65,6 +68,7 @@ public class RowBlockModel
 
     public void setIsLegalMove(boolean isLegalMove) {
 	this.isLegalMove = isLegalMove;
+    Logger.log("manipulates");
     }
 
     public boolean getIsLegalMove() {
@@ -77,5 +81,6 @@ public class RowBlockModel
     public void reset() {
 	this.contents = "";
 	this.isLegalMove = false;
+    Logger.log("manipulates");
     }
 }

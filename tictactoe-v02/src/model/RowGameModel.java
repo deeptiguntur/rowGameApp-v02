@@ -1,5 +1,6 @@
 package model;
 
+import logger.Logger;
 
 public class RowGameModel 
 {
@@ -35,6 +36,7 @@ public class RowGameModel
 	    throw new IllegalArgumentException("The player must be non-null.");
 	}
 	this.player = player;
+    Logger.log("manipulates");
     }
 
     public int getMovesLeft() {
@@ -43,6 +45,7 @@ public class RowGameModel
 
     public void setMovesLeft(int movesLeft) {
 	this.movesLeft = movesLeft;
+    Logger.log("manipulates");
     }
 
     public String getFinalResult() {
@@ -51,5 +54,6 @@ public class RowGameModel
 
     public void setFinalResult(String finalResult) {
 	this.finalResult = finalResult;
+    Logger.log("manipulates");
     }
 }

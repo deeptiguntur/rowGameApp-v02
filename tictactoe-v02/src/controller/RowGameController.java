@@ -52,7 +52,7 @@ public class RowGameController {
 	    (gameModel.blocksData[blockIndex.getRow()][blockIndex.getColumn()].getIsLegalMove() == false)) {
 	    return;
 	}
-
+	
 	gameModel.setMovesLeft(gameModel.getMovesLeft() - 1);
 	
 	if(gameModel.getPlayer().equals(Player.PLAYER_1)) {
